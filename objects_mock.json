@@ -1,0 +1,42 @@
+[
+  {
+    "name": "object1",
+    "uid": "5f2b8c8d-6a7e-4d5a-9b1c-9f5e3c9a3f0h",
+    "serial number": 123460,
+    "picture": "https://picsum.photos/200",
+    "link": "https://www.example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod enim vel nunc bibendum, sed bibendum sapien bibendum. Nullam vel libero vel nisi malesuada lacinia. Donec non magna euismod, tincidunt sapien quis, blandit velit. Sed vitae nibh ut nisl aliquet luctus."
+  },
+  {
+    "name": "object2",
+    "uid": "5f2b8c8d-6a7e-4d5a-9b1c-9f5e3c9a3f0i",
+    "serial number": 123461,
+    "picture": "https://picsum.photos/200",
+    "link": "https://www.example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod enim vel nunc bibendum, sed bibendum sapien bibendum. Nullam vel libero vel nisi malesuada lacinia. Donec non magna euismod, tincidunt sapien quis, blandit velit. Sed vitae nibh ut nisl aliquet luctus."
+  },
+  {
+    "name": "object3",
+    "uid": "5f2b8c8d-6a7e-4d5a-9b1c-9f5e3c9a3f0j",
+    "serial number": 123462,
+    "picture": "https://picsum.photos/200",
+    "link": "https://www.example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod enim vel nunc bibendum, sed bibendum sapien bibendum. Nullam vel libero vel nisi malesuada lacinia. Donec non magna euismod, tincidunt sapien quis, blandit velit. Sed vitae nibh ut nisl aliquet luctus."
+  },
+  {
+    "name": "object4",
+    "uid": "5f2b8c8d-6a7e-4d5a-9b1c-9f5e3c9a3f0k",
+    "serial number": 123463,
+    "picture": "https://picsum.photos/200",
+    "link": "https://www.example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod enim vel nunc bibendum, sed bibendum sapien bibendum. Nullam vel libero vel nisi malesuada lacinia. Donec non magna euismod, tincidunt sapien quis, blandit velit. Sed vitae nibh ut nisl aliquet luctus."
+  },
+  {
+    "name": "object5",
+    "uid": "5f2b8c8d-6a7e-4d5a-9b1c-9f5e3c9a3f0l",
+    "serial number": 123464,
+    "picture": "https://picsum.photos/200",
+    "link": "https://www.example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod enim vel nunc bibendum, sed bibendum sapien bibendum. Nullam vel libero vel nisi malesuada lacinia. Donec non magna euismod, tincidunt sapien quis, blandit velit. Sed vitae nibh ut nisl aliquet luctus."
+  }
+]
