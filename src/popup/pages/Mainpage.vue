@@ -1,7 +1,7 @@
 
 <template>
   <timeline></timeline>
-  <recommend></recommend>
+  <recommend class="recommend-button"></recommend>
 </template>
 
 <script>
@@ -17,5 +17,8 @@ export default defineComponent({
 
 
 <style scoped>
+.recommend-button {
+  margin-bottom: 20px;
+}
 
 </style>

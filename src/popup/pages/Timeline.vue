@@ -29,10 +29,10 @@ export default {
 
       lineStyle: {
         position: 'absolute',
-        top: '100px',
-        left: '10%',
+        top: '50px',
+        left: '8%',
         width: '2px',
-        height: '60%',
+        height: '70%',
         borderLeft: '1px dotted black',
         zIndex: '-1'
       },
