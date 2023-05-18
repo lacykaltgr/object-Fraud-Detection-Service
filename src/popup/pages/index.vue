@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Timeline from "~/popup/pages/Timeline.vue";
 import Recommend from "~/popup/pages/Recommend.vue";
+import Icon from "~/popup/pages/Icon.vue";
 </script>
 
 <template>

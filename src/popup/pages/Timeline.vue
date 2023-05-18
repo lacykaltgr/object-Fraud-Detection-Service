@@ -1,78 +1,109 @@
 <template>
-  <div>
-    <div v-for="transaction in transactions" :key="transaction.uid" class="timeline-item">
-      <div class="timeline-date">{{ transaction.date }}</div>
-      <div class="timeline-content">
-        <div class="profile-picture">
-          <img :src="transaction.profilePicture" alt="Profile Picture">
-        </div>
-        <div class="transaction-details">
-          <div class="uid">{{ transaction.uid }}</div>
-          <!-- Additional transaction details here -->
-        </div>
+  <div class="list-container" style="max-height: 750px; overflow-y: auto;">
+    <div class="dotted-line" :style="lineStyle"></div>
+    <div class="owner-item">
+      <Icon progress="0" />
+      <span class="owner-name">{{ transactions[0].from.name }}</span>
+    </div>
+    <div v-for="transaction in transactions" :key="transaction.uid" class="list-container">
+      <span class="transaction-item">{{ transaction.date }} id:{{ transaction.uid }}</span>
+      <div class="owner-item">
+        <Icon progress="0" />
+        <span class="owner-name">{{ transaction.from.name }}</span>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Icon from "~/popup/pages/Icon.vue";
 export default {
+  components: {Icon},
   data() {
     return {
+      lineStyle: {
+        position: 'absolute',
+        top: '100px',
+        left: '15%',
+        width: '1px',
+        height: '60%',
+        borderLeft: '1px dotted black',
+        zIndex: '-1'
+      },
       transactions: [
         {
-          uid: 'user1',
-          date: '2023-05-01',
-          profilePicture: 'user1-profile-picture.jpg',
+          from: {
+            icon: "https://example.com/owner1.png",
+            name: "Alice",
+            uid: "123",
+          },
+          to: {
+            icon: "https://example.com/owner2.png",
+            name: "Bob",
+            uid: "234",
+          },
+          uid: "456",
+          date: "2023-05-17",
+
         },
         {
-          uid: 'user2',
-          date: '2023-05-02',
-          profilePicture: 'user2-profile-picture.jpg',
+          from: {
+            icon: "https://example.com/owner2.png",
+            name: "Bob",
+            uid: "234",
+          },
+          to: {
+            icon: "https://example.com/owner1.png",
+            name: "Ceccille",
+            uid: "456",
+          },
+          uid: "789",
+          date: "2023-05-18",
         },
       ]
     };
-  }
+
+  },
 };
 </script>
 
-<style>
-.timeline-item {
+<style scoped>
+.list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.owner-item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.timeline-date {
+.owner-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.owner-name {
   font-weight: bold;
-  margin-right: 10px;
+  margin-left: 5px;
 }
 
-.timeline-content {
+.owner-uid {
+  margin-left: auto;
+}
+
+.transaction-item {
   display: flex;
-  align-items: center;
+  font-size: 10px;
+  align-content: center;
 }
 
-.profile-picture {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 10px;
+.transaction-date {
+  display: flex;
 }
 
-.profile-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.transaction-details {
-  /* Additional styles for transaction details */
-}
-
-.uid {
-  font-weight: bold;
-  /* Additional styles for UID */
+.dotted-line {
+  position: relative;
 }
 </style>
