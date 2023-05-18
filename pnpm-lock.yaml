@@ -11,7 +11,7 @@ dependencies:
 devDependencies:
   '@crxjs/vite-plugin':
     specifier: npm:@crxjs/vite-plugin@beta
-    version: 2.0.0-beta.15
+    version: 2.0.0-beta.17
   '@iconify-json/mdi':
     specifier: ^1.1.50
     version: 1.1.50
@@ -90,9 +90,6 @@ devDependencies:
   webext-bridge:
     specifier: ^5.0.5
     version: 5.0.5
-  webextension-polyfill:
-    specifier: ^0.10.0
-    version: 0.10.0
 
 packages:
 
@@ -130,14 +127,15 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
-  /@crxjs/vite-plugin@2.0.0-beta.15:
-    resolution: {integrity: sha512-3lDltBqr41BZpJRidbXnKiWwvvfpb8CQ0SKEBW1XsnKTzP9ZcJnZuSoTizBxd6Hx2VPrGFooPjuh+ohQ3QIoHg==}
+  /@crxjs/vite-plugin@2.0.0-beta.17:
+    resolution: {integrity: sha512-44CavnsY01jvF2uHfRdqA3j6bg6IcVc+ZrSayYS+H7eqb6BHWh619A2jJ3Y0eHVh9H65041ob4g6I1VMxWx4qw==}
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@webcomponents/custom-elements': 1.5.1
       acorn-walk: 8.2.0
       cheerio: 1.0.0-rc.12
       connect-injector: 0.4.4
+      convert-source-map: 1.9.0
       debug: 4.3.4
       es-module-lexer: 0.10.5
       fast-glob: 3.2.12
@@ -1054,6 +1052,10 @@ packages:
       uberproto: 1.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /convert-source-map@1.9.0:
+    resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
     dev: true
 
   /cross-spawn@7.0.3:
@@ -3017,10 +3019,6 @@ packages:
       serialize-error: 9.1.1
       tiny-uid: 1.1.2
       webextension-polyfill: 0.9.0
-    dev: true
-
-  /webextension-polyfill@0.10.0:
-    resolution: {integrity: sha512-c5s35LgVa5tFaHhrZDnr3FpQpjj1BB+RXhLTYUxGqBVN460HkbM8TBtEqdXWbpTKfzwCcjAZVF7zXCYSKtcp9g==}
     dev: true
 
   /webextension-polyfill@0.9.0:

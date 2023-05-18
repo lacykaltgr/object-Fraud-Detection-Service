@@ -1,31 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Timeline from "~/popup/pages/Timeline.vue";
+import Recommend from "~/popup/pages/Recommend.vue";
+</script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
-
+  <h1 class="text-3xl font-bold helvetica">Object</h1>
+  <h4 class="font-bold">Your metaverse</h4>
   <div>
-    <a
-      href="https://vitejs.dev"
-      target="_blank"
-    >
-      <img
-        src="~/src/assets/vite.svg"
-        class="logo"
-        alt="Vite logo"
-      />
-    </a>
-    <a
-      href="https://vuejs.org/"
-      target="_blank"
-    >
-      <img
-        src="~/src/assets/vue.svg"
-        class="logo vue"
-        alt="Vue logo"
-      />
-    </a>
+    <timeline></timeline>
+    <recommend></recommend>
   </div>
 </template>
+
+
 
 <style scoped>
 .logo {
