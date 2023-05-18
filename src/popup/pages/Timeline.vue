@@ -30,8 +30,8 @@ export default {
       lineStyle: {
         position: 'absolute',
         top: '100px',
-        left: '15%',
-        width: '1px',
+        left: '10%',
+        width: '2px',
         height: '60%',
         borderLeft: '1px dotted black',
         zIndex: '-1'

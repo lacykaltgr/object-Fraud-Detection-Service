@@ -1,6 +1,5 @@
 <template>
   <div class="my-object">
-    <h2>My Objects</h2>
     <div class="object-list">
       <ul>
         <li v-for="object in objects" :key="object.id">

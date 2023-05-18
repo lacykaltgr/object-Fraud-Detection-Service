@@ -1,6 +1,9 @@
 
 <template>
-  <img class="logo" src="/src/assets/logo.png" alt="Logo">
+  <span>
+    <img class="logo" src="/src/assets/logo.png" alt="Logo">
+  </span>
+
   <div class="page-buttons">
     <button class="page-button" @click="changePage('mainpage')">Recommend</button>
     <button class="page-button" @click="changePage('objects')">Your metaverse</button>
@@ -21,7 +24,7 @@ export default {
   components: { Timeline, Recommend, Objects, Mainpage },
   data() {
     return {
-      currentPage: "timeline"
+      currentPage: "mainpage"
     };
   },
   methods: {
@@ -60,10 +63,9 @@ export default {
 
 .page {
   position: relative;
-  top: 30px;
+  top: 50px;
   left: 0;
-  margin: 50px;
-  bottom: 100px;
 }
+
 
 </style>
