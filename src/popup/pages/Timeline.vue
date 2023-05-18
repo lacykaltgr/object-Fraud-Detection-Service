@@ -1,7 +1,4 @@
 <template >
-  <button class="typing-effect" @click="changePage">
-    your metaverse
-  </button>
   <div class="list-container" style="max-height: 750px; overflow-y: auto;">
     <div class="dotted-line" :style="lineStyle"></div>
     <div class="owner-item">

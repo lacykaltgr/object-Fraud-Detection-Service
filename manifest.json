@@ -6,6 +6,9 @@
     "service_worker": "src/background/index.ts",
     "type": "module"
   },
+  "icons": {
+    "512": "src/assets/logo.png"
+  },
   "content_scripts": [
     {
       "all_frames": true,

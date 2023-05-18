@@ -1,19 +1,28 @@
-<script setup lang="ts">
-import Timeline from "~/popup/pages/Timeline.vue";
-import Recommend from "~/popup/pages/Recommend.vue";
-import ScrollView from "~/popup/pages/ScrollView.vue";
-import MyOdject from "~/popup/pages/MyOdject.vue";
-
-</script>
 
 <template>
-  <h1 class="text-3xl font-bold helvetica">Object</h1>
-  <h4 class="font-bold">Your metaverse</h4>
-  <timeline></timeline>
+  <img class="logo" src="/src/assets/logo.png" alt="Logo">
+  <span>
+      <button @click="changePage">your metaverse</button>
+      <button @click="changePage">your metaverse</button>
+  </span>
+  <ScrollView></ScrollView>
 </template>
+
+<script>
+import ScrollView from "~/popup/pages/ScrollView.vue";
+
+export default {
+  components: {ScrollView},
+}
+</script>
 
 
 
 <style scoped>
-
+.logo {
+  width: 50px; /* Adjust the width as needed */
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the left position as needed */
+}
 </style>
