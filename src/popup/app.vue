@@ -7,7 +7,9 @@ router.push({ path: 'popup' })
 </script>
 
 <template>
-  <RouterView></RouterView>
+    <RouterView></RouterView>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

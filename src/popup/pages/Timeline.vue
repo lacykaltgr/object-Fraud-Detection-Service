@@ -1,4 +1,7 @@
-<template>
+<template >
+  <button class="typing-effect" @click="changePage">
+    your metaverse
+  </button>
   <div class="list-container" style="max-height: 750px; overflow-y: auto;">
     <div class="dotted-line" :style="lineStyle"></div>
     <div class="owner-item">
@@ -9,7 +12,7 @@
       <span class="transaction-item">{{ transaction.date }} id:{{ transaction.uid }}</span>
       <div class="owner-item">
         <Icon progress="0" />
-        <span class="owner-name">{{ transaction.from.name }}</span>
+        <span class="owner-name">{{ transaction.to.name }}</span>
       </div>
     </div>
   </div>
@@ -19,8 +22,14 @@
 import Icon from "~/popup/pages/Icon.vue";
 export default {
   components: {Icon},
+  methods: {
+    changePage() {
+      this.$router.push({ path: 'popup/recommend' })
+    }
+  },
   data() {
     return {
+
       lineStyle: {
         position: 'absolute',
         top: '100px',
@@ -106,4 +115,6 @@ export default {
 .dotted-line {
   position: relative;
 }
+
+
 </style>

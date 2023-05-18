@@ -1,17 +1,20 @@
 {
   "dependencies": {
+    "aos": "^2.3.4",
     "vue": "^3.2.47",
+    "vue-horizontal-scroll": "^0.2.4",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "npm:@crxjs/vite-plugin@beta",
     "@iconify-json/mdi": "^1.1.50",
+    "@types/aos": "^3.0.4",
     "@types/chrome": "^0.0.226",
-    "@typescript-eslint/parser": "^5.57.0",
     "@types/eslint-config-prettier": "^6.11.0",
     "@types/node": "^18.15.11",
     "@types/prettier": "^2.7.2",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vueuse/core": "^9.13.0",
     "autoprefixer": "^10.4.14",
