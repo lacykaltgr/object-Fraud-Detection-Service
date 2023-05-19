@@ -30,6 +30,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   width: 350px; /* Set the desired width */
+  height:auto;
 }
 
 h1 {

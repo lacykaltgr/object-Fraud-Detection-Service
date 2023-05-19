@@ -6,7 +6,10 @@
 </template>
 
 <script>
+import {useRoute} from "vue-router";
+
 export default {
+
   data() {
     return {
       typedText: 'Recommendation',
