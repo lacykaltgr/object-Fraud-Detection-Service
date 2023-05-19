@@ -1,7 +1,8 @@
 <template>
-  <span>
-    <img class="logo" src="/src/assets/logo.png" alt="Logo">
-  </span>
+  <div class = "logo">
+    <img src="/src/assets/blockchain.png" alt="Logo">
+
+  </div>
   <div class="page-buttons">
     <button class="page-button" :class="{ 'active-page': currentPage === 'mainpage' }" @click="changePage('mainpage')">Recommend</button>
     <button class="page-button" :class="{ 'active-page': currentPage === 'objects' }" @click="changePage('objects')">Your metaverse</button>
@@ -32,11 +33,23 @@ export default {
 </script>
 <style scoped>
 .logo {
-  width: 30px; /* Adjust the width as needed */
+  width: 70px; /* Adjust the width as needed */
   position: absolute;
-  top: 10px; /* Adjust the top position as needed */
-  left: 10px; /* Adjust the left position as needed */
+  align-items: center;
+  top: 10px;
+  left: 10px;
+  margin: 0 auto;
 }
+
+.logo {
+  width: 70px; /* Adjust the width as needed */
+  position: absolute;
+  align: left;
+  top: 10px;
+  left: 10px;
+  margin: 0 auto;
+}
+
 
 .page-button {
   width: 120px;
@@ -54,7 +67,7 @@ export default {
 
 .page-buttons {
   position: absolute;
-  top: 50px;
+  top: 55px;
   left: 0;
   right: 0;
   margin: 0 auto;
