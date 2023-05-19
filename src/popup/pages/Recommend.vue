@@ -12,7 +12,7 @@ export default {
 
   data() {
     return {
-      typedText: 'Ask IsaacAI',
+      typedText: 'Ask AI',
       isActive: true,
     };
   },
