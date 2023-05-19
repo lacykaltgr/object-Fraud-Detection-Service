@@ -12,7 +12,7 @@ export default {
 
   data() {
     return {
-      typedText: 'Recommendation',
+      typedText: 'Ask IsaacAI',
       isActive: true,
     };
   },
@@ -61,17 +61,24 @@ button {
   width: 300px;
   height: 200px;
   transition: width 0.5s, height 0.5s;
+  color: black;
+  background-color: white;
 }
 
 button.active {
   width: 300px;
   height: 40px;
+  background-coLor: steelblue;
+  color: white;
+  font-family: Helvetica, serif;
+  font-weight: bold;
 }
+
 
 .typing-effect {
   font-family: monospace;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 2px solid steelblue;
   padding: 10px;
   width: 300px; /* Set the desired width of the textbox */
   overflow-wrap: break-word; /* Break the line when the text reaches the width */

@@ -1,19 +1,15 @@
-
 <template>
   <span>
     <img class="logo" src="/src/assets/logo.png" alt="Logo">
   </span>
-
   <div class="page-buttons">
-    <button class="page-button" @click="changePage('mainpage')">Recommend</button>
-    <button class="page-button" @click="changePage('objects')">Your metaverse</button>
+    <button class="page-button" :class="{ 'active-page': currentPage === 'mainpage' }" @click="changePage('mainpage')">Recommend</button>
+    <button class="page-button" :class="{ 'active-page': currentPage === 'objects' }" @click="changePage('objects')">Your metaverse</button>
   </div>
   <div class="page">
     <component :is="currentPage"></component>
   </div>
-
 </template>
-
 <script>
 import Timeline from "~/popup/pages/Timeline.vue";
 import Recommend from "~/popup/pages/Recommend.vue";
@@ -21,7 +17,7 @@ import Mainpage from "~/popup/pages/Mainpage.vue";
 import Objects from "~/popup/pages/Objects.vue";
 
 export default {
-  components: { Timeline, Recommend, Objects, Mainpage },
+  components: { Timeline, Recommend, Objects, Mainpage},
   data() {
     return {
       currentPage: "mainpage"
@@ -34,9 +30,6 @@ export default {
   }
 };
 </script>
-
-
-
 <style scoped>
 .logo {
   width: 30px; /* Adjust the width as needed */
@@ -46,10 +39,17 @@ export default {
 }
 
 .page-button {
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 35px;
   transition: width 0.5s, height 0.5s;
-  padding: 2px;
+  padding: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 50px;
+}
+
+.active-page {
+  border: 2px solid #000; /* Adjust the border properties as needed */
 }
 
 .page-buttons {
@@ -58,7 +58,7 @@ export default {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 200px; /* adjust as needed */
+  width: 250px; /* adjust as needed */
 }
 
 .page {
@@ -66,6 +66,4 @@ export default {
   top: 50px;
   left: 0;
 }
-
-
 </style>
