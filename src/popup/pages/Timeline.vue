@@ -4,7 +4,7 @@
     <div class="owner-item">
       <Icon progress="0" />
       <span class="owner-name">{{ transactions[0].from.name }}</span>
-      <span>{{ transactions[0].from.uid }}</span>
+      <span class="transaction-item">{{ transactions[0].from.uid }}</span>
     </div>
     <div v-for="transaction in transactions" :key="transaction.uid" class="list-container">
       <span class="transaction-item">
@@ -20,7 +20,7 @@
       <div class="owner-item">
         <Icon progress="0" />
         <span class="owner-name">{{ transaction.to.name }}</span>
-        <span>{{ transactions[0].from.uid }}</span>
+        <span class="transaction-item">{{ transaction.from.uid }}</span>
       </div>
     </div>
   </div>
@@ -51,30 +51,30 @@ export default {
         {
           from: {
             icon: "https://example.com/owner1.png",
-            name: "Alice",
-            uid: "123",
+            name: "Alice Cooper",
+            uid: "96f07db646bf6a5",
           },
           to: {
             icon: "https://example.com/owner2.png",
-            name: "Bob",
-            uid: "234",
+            name: "Bob Marley",
+            uid: "6ef17c05d721",
           },
-          uid: "456",
+          uid: "d6543411553b7677196f07db646bf6a5",
           date: "2023-05-17",
 
         },
         {
           from: {
             icon: "https://example.com/owner2.png",
-            name: "Bob",
-            uid: "234",
+            name: "Bob Marley",
+            uid: "6ef17c05d721",
           },
           to: {
             icon: "https://example.com/owner1.png",
-            name: "Ceccille",
-            uid: "456",
+            name: "Celena Gompez",
+            uid: "aa56af53577c",
           },
-          uid: "789",
+          uid: "46c541a1f5fc82dfe6c08534e2dec0a0",
           date: "2023-05-18",
         },
       ]
@@ -95,7 +95,7 @@ export default {
   align-items: center;
   margin-bottom: 8px;
   margin-top: 8px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 
@@ -107,7 +107,7 @@ export default {
 
 .transaction-item {
   display: flex;
-  font-size: 10px;
+  font-size: 8px;
   align-content: center;
   opacity: 50%;
 }
