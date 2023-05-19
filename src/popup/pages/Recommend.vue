@@ -29,11 +29,11 @@ export default {
       // Simulating API call delay with setTimeout
       setTimeout(() => {
         const responses = ["After thorough analysis of the website and seller in question, I cannot recommend this specific product or seller due to multiple red flags and suspicious indicators found during the assessment.",
-          "Based on my analysis, I <b>cannot</b> recommend this particular product or seller due to significant concerns regarding their credibility and potential fraudulent activities.", "Based on my thorough assessment, I confidently recommend this seller for online purchases. They have consistently exhibited trustworthy practices, indicating a reliable track record."]
+          "Based on my analysis, I cannot recommend this particular product or seller due to significant concerns regarding their credibility and potential fraudulent activities.", "Based on my thorough assessment, I confidently recommend this seller for online purchases. They have consistently exhibited trustworthy practices, indicating a reliable track record."]
         // Mock API response
         const response = responses[Math.floor(Math.random() * responses.length)];
         this.typeText(response);
-      }, 1000);
+      }, 100);
     },
     typeText(text) {
       let currentIndex = 0;
@@ -52,7 +52,7 @@ export default {
             this.textBoxHeight += 20; // Increase the height by 20 pixels (adjust as needed)
           }
         });
-      }, 100); // Typing speed: 100 milliseconds per character
+      }, 10); // Typing speed: 100 milliseconds per character
     },
   },
 };
