@@ -62,7 +62,7 @@ export default {
 }
 
 .active-page {
-  border: 2px solid #000; /* Adjust the border properties as needed */
+  border: 2px solid mediumblue; /* Adjust the border properties as needed */
 }
 
 .page-buttons {
