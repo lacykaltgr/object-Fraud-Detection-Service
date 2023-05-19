@@ -35,9 +35,9 @@ export default {
   methods: {
     calculateBorderColor() {
       // Calculate the darkness of the border color based on the progress value
-      const r = Math.round((this.progress) * 2.55);
-      const g = Math.round((this.progress) * 2.2);
-      const b = Math.round((this.progress) * 0.8);
+      const r = Math.round((100-this.progress)+5 * 2);
+      const g = Math.round((100-this.progress)+5 * 2);
+      const b = Math.round((100-this.progress)+5 * 2);
       return `rgb(${r}, ${g}, ${b})`;
     }
   }

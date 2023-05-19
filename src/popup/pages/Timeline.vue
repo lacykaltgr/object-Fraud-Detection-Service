@@ -1,7 +1,8 @@
 <template >
+  <div class="dotted-line" :style="lineStyle"></div>
   <div class="list-container" style="max-height: 750px; overflow-y: auto;">
-    <div class="dotted-line" :style="lineStyle"></div>
     <div class="owner-item">
+
       <Icon progress="20" />
       <span class="owner-name">{{ transactions[0].from.name }}</span>
       <span class="transaction-item">{{ transactions[0].from.uid }}</span>
@@ -85,6 +86,7 @@ export default {
 </script>
 
 <style scoped>
+
 .list-container {
   display: flex;
   flex-direction: column;
@@ -114,6 +116,8 @@ export default {
 
 .dotted-line {
   position: relative;
+  top: 50px;
+
 }
 
 .tranaction-id{
