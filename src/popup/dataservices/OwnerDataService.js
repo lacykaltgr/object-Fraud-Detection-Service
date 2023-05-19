@@ -1,10 +1,8 @@
 import jsonData from './users.json';
 
 export default {
-    getTransactionData() {
-        setTimeout(() => {
-            this.ownerData = jsonData;
-        }, 500);
+    getData() {
+        this.ownerData = jsonData;
         return this.ownerData;
     }
 }

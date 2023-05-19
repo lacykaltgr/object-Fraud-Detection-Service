@@ -1,7 +1,7 @@
 import jsonData from './transactions.json';
 
 export default {
-    getTransactionData() {
+    getData() {
         setTimeout(() => {
             this.transactionData = jsonData;
         }, 500);

@@ -1,0 +1,13 @@
+[{"name":"Infinite Energy Generator","uid":"8f3da578-2c9e-4a4b-8e0d-921cbb09822a","serial_num":"7210491037","picture":"EnergyGenerator.jpg","link":"https://example.com/energy-generator","description":"Revolutionary device that claims to produce infinite clean energy. Requires scientific validation."},
+
+{"name":"Time Travel Device","uid":"27e41b96-6c1d-4e5c-8d79-31514f9e48ce","serial_num":"3065821479","picture":"TimeMachine.png","link":"https://example.com/time-machine","description":"Alleged time travel machine capable of transporting users to any point in history. Requires rigorous testing and proof."},
+
+{"name":"Miracle Weight Loss Pill","uid":"f6a7d524-89e6-4c48-b08d-137ce347e2a5","serial_num":"5092384716","picture":"WeightLossPill.jpeg","link":"https://example.com/weight-loss-pill","description":"Supposed weight loss pill claiming miraculous results. Needs clinical trials and verification by medical authorities."},
+
+{"name":"Flying Car Prototype","uid":"c9b7e819-48f7-45ab-9d5b-3de2b5d8a36c","serial_num":"7346912850","picture":"FlyingCarPrototype.gif","link":"https://example.com/flying-car","description":"Prototype of a flying car that promises to revolutionize transportation. Requires safety certifications and regulatory approval."},
+
+{"name":"Universal Language Translator","uid":"d47fb091-1845-45a0-9210-8d3ce67477bc","serial_num":"6158934270","picture":"LanguageTranslator.png","link":"https://example.com/language-translator","description":"Device claiming to instantly translate any language. Needs validation by linguists and language experts."},
+
+{"name":"Anti-Gravity Boots","uid":"e2c69ab9-3f17-495e-9e42-7d2e372c5d7d","serial_num":"9254108736","picture":"AntiGravityBoots.jpg","link":"https://example.com/anti-gravity-boots","description":"Boots that claim to defy gravity and allow the wearer to walk on walls and ceilings. Requires scientific examination and validation."},
+{"name":"Invisibility Cloak","uid":"1358f1d4-c67b-4e72-9253-2c7d51fbd9f8","serial_num":"3847562910","picture":"InvisibilityCloak.png","link":"https://example.com/invisibility-cloak","description":"Cloak that promises to render the wearer invisible. Needs independent verification and demonstration."},
+{"name":"Memory Enhancement Device","uid":"a6e3b8d2-6c1e-4d19-9ef5-b05d621d2b26","serial_num":"6483790521","picture":"MemoryEnhancer.jpg","link":"https://example.com/memory-enhancer","description":"Device claiming to enhance memory and cognitive abilities. Requires clinical trials and validation by neuroscientists."}]

@@ -4,12 +4,10 @@
       <ul>
         <li v-for="object in objects" :key="object.id">
           <div class="object-details">
-            <img :src="object.image" alt="Object Image" />
             <div class="object-id">
               <h3>{{ object.name }}</h3>
-              <p>Purchase Date: {{ formatDate(object.purchaseDate) }}</p>
-              <p>Object ID: {{ object.id }}</p>
-              <p>Serial Num: {{ object.serial }}</p>
+              <p>Object Hash: {{ object.uid }}</p>
+              <p>Manufacturer Serial Num: {{ object.serial_num }}</p>
             </div>
           </div>
         </li>
@@ -58,7 +56,7 @@
 }
 
 .my-object .object-details {
-  margin: 20px;
+  margin-bottom: 20px;
   color: gray;
   display: flex;
   align-items: center;
@@ -67,48 +65,16 @@
 
 
 <script>
+import ObjectDataService from "~/popup/dataservices/ObjectDataService.js";
+
 export default {
   data() {
     return {
-      objects: [
-        {
-          id: 1,
-          serial: 12123424,
-          name: "Object 1",
-          image: "/src/assets/logo.png",
-          purchaseDate: "2023-01-01T12:00:00Z" // Replace with actual purchase date
-        },
-        {
-          id: 1,
-          serial: 12123424,
-          name: "Object 1",
-          image: "/src/assets/logo.png",
-          purchaseDate: "2023-01-01T12:00:00Z" // Replace with actual purchase date
-        },
-        {
-          id: 1,
-          serial: 12123424,
-          name: "Object 1",
-          image: "/src/assets/logo.png",
-          purchaseDate: "2023-01-01T12:00:00Z" // Replace with actual purchase date
-        },
-        {
-          id: 1,
-          serial: 12123424,
-          name: "Object 1",
-          image: "/src/assets/logo.png",
-          purchaseDate: "2023-01-01T12:00:00Z" // Replace with actual purchase date
-        },{
-          id: 1,
-          serial: 12123424,
-          name: "Object 1",
-          image: "/src/assets/logo.png",
-          purchaseDate: "2023-01-01T12:00:00Z" // Replace with actual purchase date
-        },
-
-        // Add more objects as needed
-      ]
+      objects: ObjectDataService.getData()
     };
+  },
+  created() {
+    this.objects = ObjectDataService.getData();
   },
   methods: {
     formatDate(dateString) {

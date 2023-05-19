@@ -1,10 +1,8 @@
-import jsonData from 'objects.json';
+import jsonData from 'src/assets/objects.json';
 
 export default {
-    getTransactionData() {
-        setTimeout(() => {
-            this.objectData = jsonData;
-        }, 500);
+    getData() {
+        this.objectData = jsonData;
         return this.objectData;
     }
 }
