@@ -79,19 +79,19 @@ export default {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-.my-object ul {
+.my-object {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.my-object li {
+.my-object{
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.my-object img {
+.my-object {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -99,11 +99,11 @@ export default {
   object-fit: cover;
 }
 
-.my-object .object-details h3 {
+.my-object .object-details{
   margin: 0;
 }
 
-.my-object .object-details p {
+.my-object .object-details {
   margin: 5px 0;
   color: gray;
 }
