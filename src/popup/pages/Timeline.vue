@@ -2,7 +2,7 @@
   <div class="list-container" style="max-height: 750px; overflow-y: auto;">
     <div class="dotted-line" :style="lineStyle"></div>
     <div class="owner-item">
-      <Icon progress="0" />
+      <Icon progress="20" />
       <span class="owner-name">{{ transactions[0].from.name }}</span>
     </div>
     <div v-for="transaction in transactions" :key="transaction.uid" class="list-container">
@@ -10,7 +10,7 @@
       <span class="transaction-item">{{ transaction.date.split("-").slice(1, 3).join("-")}}  transaction id: {{ transaction.uid}}</span>
       <span class="transaction-item"></span>
       <div class="owner-item">
-        <Icon progress="0" />
+        <Icon progress="90" />
         <span class="owner-name">{{ transaction.to.name }}</span>
       </div>
     </div>

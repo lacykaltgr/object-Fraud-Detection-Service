@@ -11,7 +11,6 @@
 
 <script>
 export default {
-
   props: {
     progress: {
       type: Number,
@@ -20,14 +19,26 @@ export default {
   },
   computed: {
     loaderCircleStyle() {
+      const borderColor = this.calculateBorderColor();
+
       return {
         position: 'absolute',
         width: '100%',
         height: '100%',
         borderRadius: '50%',
         background: '#ccc',
-        clipPath: `polygon(0 0, 100% 0, 100% ${100 - this.progress}%, 0 ${100 - this.progress}%)`
+        overflow: 'hidden',
+        border: `${borderColor} 4px solid`
       };
+    }
+  },
+  methods: {
+    calculateBorderColor() {
+      // Calculate the darkness of the border color based on the progress value
+      const r = Math.round((this.progress) * 2.55);
+      const g = Math.round((this.progress) * 2.2);
+      const b = Math.round((this.progress) * 0.8);
+      return `rgb(${r}, ${g}, ${b})`;
     }
   }
 };
