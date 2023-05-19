@@ -28,8 +28,10 @@ export default {
       this.typedText = '';
       // Simulating API call delay with setTimeout
       setTimeout(() => {
+        const responses = ["After thorough analysis of the website and seller in question, I cannot recommend this specific product or seller due to multiple red flags and suspicious indicators found during the assessment.",
+          "Based on my analysis, I <b>cannot</b> recommend this particular product or seller due to significant concerns regarding their credibility and potential fraudulent activities.", "Based on my thorough assessment, I confidently recommend this seller for online purchases. They have consistently exhibited trustworthy practices, indicating a reliable track record."]
         // Mock API response
-        const response = 'Ai vagyok és most megmondom mit vegyél meg mit ne.';
+        const response = responses[Math.floor(Math.random() * responses.length)];
         this.typeText(response);
       }, 1000);
     },
