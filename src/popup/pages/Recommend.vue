@@ -60,13 +60,13 @@ export default {
 button {
   width: 300px;
   height: 200px;
-  transition: width 0.5s, height 0.5s;
+  transition: width 0.8s, height 0.8s;
   color: black;
   background-color: white;
 }
 
 button.active {
-  width: 300px;
+  width: 250px;
   height: 40px;
   background-coLor: steelblue;
   color: white;
